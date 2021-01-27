@@ -15,9 +15,11 @@ body, html{
 .carousel-item img{
     max-width: 100%;
     height: auto;
+
 }
 .carousel-item-visible{
     display: block;
+    animation: fadeVisibility 1s;
 }
 .carousel-actions {
    display: flex;
@@ -38,5 +40,53 @@ body, html{
     width: 40px;
     height: 40px;
     margin: 0 10px 10px 10px;
+   
 
+}
+#loading-bar{
+    
+    width: 100%;
+    position: absolute;
+    top: 95.5%;
+
+}
+#slide-no{
+    color:rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.308);
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 0px;
+    font-weight: bold;
+
+}
+.custom-text{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.432);
+    padding: 0 20px;
+    height: 60px;
+}
+
+
+@keyframes fadeVisibility{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes toFullWidth{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
 }
