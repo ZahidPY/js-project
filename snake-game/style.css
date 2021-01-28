@@ -1,0 +1,30 @@
+html, body{
+    font-family:  Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+}
+
+.square{
+    height: 20px;
+    width: 20px ;
+    background-color: rgb(255, 255, 255);
+}
+
+.snake{
+    background-color: red;
+}
+.apple{
+    background-color: blue;
+}
