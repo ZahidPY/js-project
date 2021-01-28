@@ -116,13 +116,13 @@ generateApple()
 // 37 is for the left arrow
 // 40 is for the down arrow
 
-rightBtn.addEventListener("click", function(){
+rightBtn.addEventListener("onclick", function(){
         direction = 1})
-upBtn.addEventListener("click", function(){
+upBtn.addEventListener("onclick", function(){
         direction = -width})
-leftBtn.addEventListener("click", function(){
+leftBtn.addEventListener("onclick", function(){
         direction = -1})
-downBtn.addEventListener("click", function(){
+downBtn.addEventListener("onclick", function(){
     console.log("down pressed")
         direction = +width})  
     
