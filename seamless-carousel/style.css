@@ -19,7 +19,7 @@ body, html{
 }
 .carousel-item-visible{
     display: block;
-    animation: fadeVisibility 1s;
+    animation: fadeVisibility 2s;
 }
 .carousel-actions {
    display: flex;
