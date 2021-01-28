@@ -1,6 +1,11 @@
 const grid = document.querySelector('.grid')
 const startButton = document.getElementById('start')
 const scoreDisplay = document.getElementById('score')
+const upBtn = document.getElementById('up');
+const rightBtn = document.getElementById('right');
+const downBtn = document.getElementById('down');
+const leftBtn = document.getElementById('left');
+
 let squares = []
 let currentSnake = [2,1,0]
 let direction = 1
@@ -110,6 +115,20 @@ generateApple()
 // 38 is for the up arrow
 // 37 is for the left arrow
 // 40 is for the down arrow
+
+rightBtn.addEventListener("click", function(){
+        direction = 1})
+upBtn.addEventListener("click", function(){
+        direction = -width})
+leftBtn.addEventListener("click", function(){
+        direction = -1})
+downBtn.addEventListener("click", function(){
+    console.log("down pressed")
+        direction = +width})  
+    
+  
+
+
 
 function control(e) {
     if (e.keyCode === 39) {

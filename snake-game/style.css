@@ -28,3 +28,15 @@ html, body{
 .apple{
     background-color: blue;
 }
+.button{
+    padding: 20px
+}
+#up, #left, #down, #right{
+    padding: 0px;
+    background-color: #fff;
+    border: none;
+    font-size: 1.5em;
+}
+#left, #right{
+    margin: 0 15px;
+}
