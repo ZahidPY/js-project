@@ -53,6 +53,9 @@ function againButton() {
     score.textContent = scoreValue;
     document.querySelector(".guess").value = "";
     document.querySelector("body").style.backgroundColor = "#222";
+    number.textContent = "?";
+    document.querySelector(".check").style.display = "block";
+
 }
 
 function forWinner(){
