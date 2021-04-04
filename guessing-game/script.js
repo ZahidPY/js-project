@@ -47,7 +47,6 @@ function checkButton() {
 
 function againButton() {
     randomNumber = Math.floor(Math.random() * 20);
-    number = randomNumber;
     message.textContent = "Start guessing...";
     scoreValue = 20;
     score.textContent = scoreValue;
