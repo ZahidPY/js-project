@@ -13,6 +13,9 @@ const player0El = prompt("Enter First Player Name:", "Player 1");
 const player1El = prompt("Enter Second Player Name:", "Player 2");
 
 const point = parseInt(prompt("Winning Point:", "100"));
+const diceSound = new Audio('rollDice.mp3');
+const holdSound = new Audio('hold.mp3');
+const winnerSound = new Audio('winner.mp3');
 
 document.querySelector("#name--0").textContent = player0El;
 document.querySelector("#name--1").textContent = player1El;
@@ -33,6 +36,7 @@ newGame.addEventListener("click", newGameFunc);
 
 function rollDiceFunc() {
     if (playing) {
+        diceSound.play();
         const dice = Math.floor(Math.random() * 6) + 1;
         console.log(dice);
 
@@ -57,7 +61,7 @@ function holdFunc() {
         if (score[player] >= point) {
             document.querySelector(`.player--${player}`).classList.add("player--winner");
             playing = false;
-
+            winnerSound.play();
             diceEl.src = "tenor.gif"
             diceEl.style.height = "15rem";
             diceEl.style.boxShadow = "none";
@@ -89,6 +93,7 @@ function newGameFunc() {
 }
 
 function changePlayer() {
+    holdSound.play();
     currentScore = 0;
     document.querySelector(`#current--${player}`).textContent = currentScore;
     player = player === 0 ? 1 : 0;
